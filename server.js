@@ -1,12 +1,15 @@
 const express = require("express");
+const path = require("path");
+
 const app = express();
 
 // middleware
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 
 // set EJS
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 // routes
 app.get("/", (req, res) => {
@@ -18,7 +21,9 @@ app.post("/contact", (req, res) => {
   res.send("Thank you! Message received.");
 });
 
-// start server
-app.listen(3000, () => {
-  console.log("Portfolio running at http://localhost:3000");
+// start server (IMPORTANT FIX)
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Portfolio running on port ${PORT}`);
 });
