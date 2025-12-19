@@ -1,15 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>DEZOVTEX</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>DEZOVTEX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-  <h1>DEZOVTEX Portfolio</h1>
-  <p>Render deployment working successfully ✅</p>
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">DEZOVTEX</div>
 
-  <script src="script.js"></script>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="social-links">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Where Design Meets Technology.</h1>
+    <p>Imagine. Design. Deliver.</p>
+</section>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">The DEZOVTEX Narrative</h2>
+        
+        <div class="about-wrapper">
+            <div class="about-text-block">
+                <p class="intro-text">
+                    At <span class="accent-text">DEZOVTEX</span>, we bridge the gap between raw imagination and digital excellence. We are a multi-disciplinary studio specializing in high-fidelity 3D modeling, cinematic animation, and comprehensive game development.
+                </p>
+                <p>
+                    Our mission is to redefine the industry through <span class="white-text">immersive storytelling</span> and meaningful player agency. We don't just build games; we craft worlds where every choice matters and every asset tells a story.
+                </p>
+                <p>
+                    Beyond the digital canvas, we provide elite IT solutions—from scalable web architectures and custom application building to intuitive UI/UX design and dynamic 2D motion graphics. We are fueled by <span class="white-text">innovative ideas</span> designed to simplify complex workflows and empower people to work smarter, not harder.
+                </p>
+            </div>
+
+            <div class="service-feature-grid">
+                <div class="service-mini-card">
+                    <i class="fas fa-cube"></i>
+                    <span>3D Assets</span>
+                </div>
+                <div class="service-mini-card">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Game Dev</span>
+                </div>
+                <div class="service-mini-card">
+                    <i class="fas fa-code"></i>
+                    <span>Web & App</span>
+                </div>
+                <div class="service-mini-card">
+                    <i class="fas fa-pen-nib"></i>
+                    <span>UI/UX Design</span>
+                </div>
+                <div class="service-mini-card">
+                    <i class="fas fa-video"></i>
+                    <span>2D Animation</span>
+                </div>
+                <div class="service-mini-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Innovations</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section dark">
+    <h2>Our Services</h2>
+
+    <div class="grid">
+        <div class="card">3D & 2D Animation Videos</div>
+        <div class="card">3D Modeling & Assets</div>
+        <div class="card">Polygon Character Creation</div>
+        <div class="card">2D Character Design</div>
+        <div class="card">Game Art & Environments</div>
+        <div class="card">Website & Web App Development</div>
+        <div class="card">UI/UX, Posters & Pamphlets</div>
+        <div class="card">Video Editing & Reels</div>
+        <div class="card">Game Development (Optional)</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section dark-section">
+    <div class="container">
+        <h2 class="section-title">OUR PROJECTS</h2>
+
+        <div class="filter-bar">
+            <span class="filter-pill active" data-filter="all">All</span>
+            <span class="filter-pill" data-filter="3d">3D Modeling</span>
+            <span class="filter-pill" data-filter="animation">Animation</span>
+            <span class="filter-pill" data-filter="game">Game Dev</span>
+            <span class="filter-pill" data-filter="it">IT Solutions</span>
+        </div>
+
+        <div class="project-showcase">
+            <!-- PROJECT 1 -->
+            <div class="case-card" data-category="3d"
+                data-title="An Abandoned Tea Shop"
+                data-desc="Atmospheric 3D study of an abandoned tea shop located on a misty hillside at night."
+                data-img="teashop.png">
+
+                <div class="case-image" style="background-image:url('teashop.png')"></div>
+                <div class="case-content">
+                    <div class="tech-stack">
+                        <span class="tech-pill">3D Modeling</span>
+                        <span class="tech-pill">Blender</span>
+                    </div>
+                    <h3>An Abandoned Tea Shop</h3>
+                    <p>An abandoned tea shop on a hillside during late night.</p>
+                    <div class="card-footer">
+                        <span class="learn-more">Learn More</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="case-card" data-category="animation"
+                data-title="Terrific Tacos"
+                data-desc="Stylized animation project created for branding and motion storytelling."
+                data-img="Artboard\ 1.png">
+
+                <div class="case-image" style="background-image:url('Artboard\ 1.png')"></div>
+                <div class="case-content">
+                    <div class="tech-stack">
+                        <span class="tech-pill">Animation</span>
+                        <span class="tech-pill">Maya</span>
+                    </div>
+                    <h3>Terrific Tacos</h3>
+                    <p>Stylized animated visual design project.</p>
+                    <div class="card-footer">
+                        <span class="learn-more">Learn More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Client projects-->
+
+<!-- PROJECTS -->
+<section id="projects" class="section dark-section">
+    <div class="container">
+        <h2 class="section-title">Client PROJECTS</h2>
+
+        <div class="filter-bar">
+            <span class="filter-pill active" data-filter="all">All</span>
+            <span class="filter-pill" data-filter="3d">3D Modeling</span>
+            <span class="filter-pill" data-filter="animation">Animation</span>
+            <span class="filter-pill" data-filter="game">Game Dev</span>
+            <span class="filter-pill" data-filter="it">IT Solutions</span>
+        </div>
+
+        <div class="project-showcase">
+            <!-- PROJECT 1 -->
+            <div class="case-card" data-category="3d"
+                data-title="An Abandoned Tea Shop"
+                data-desc="Atmospheric 3D study of an abandoned tea shop located on a misty hillside at night."
+                data-img="teashop.png">
+
+                <!--<div class="case-image" style="background-image:url('teashop.png')"></div>
+
+                <div class="case-image">
+                        <video class="case-video" autoplay loop muted playsinline poster="teashop.png">
+                            <source src="Bricks.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                    </div
+
+                <div class="case-content">
+                    <div class="tech-stack">
+                        <span class="tech-pill">3D Modeling</span>
+                        <span class="tech-pill">Blender</span>
+                    </div>
+                    <h3>An Abandoned Tea Shop</h3>
+                    <p>An abandoned tea shop on a hillside during late night.</p>
+                    <div class="card-footer">
+                        <span class="learn-more">Learn More</span>
+                    </div>
+                </div>
+            </div>-->
+
+
+            <!-- PROJECT 2 -->
+            <div class="case-card" data-category="animation"
+                data-title="Terrific Tacos"
+                data-desc="Stylized animation project created for branding and motion storytelling."
+                data-img="Artboard\ 1.png">
+
+                <div class="case-image" style="background-image:url('Artboard\ 1.png')"></div>
+                <div class="case-content">
+                    <div class="tech-stack">
+                        <span class="tech-pill">Animation</span>
+                        <span class="tech-pill">Maya</span>
+                    </div>
+                    <h3>Terrific Tacos</h3>
+                    <p>Stylized animated visual design project.</p>
+                    <div class="card-footer">
+                        <span class="learn-more">Learn More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECT POPUP -->
+<div class="project-modal" id="projectModal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img id="modalImg">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+    </div>
+</div>
+
+
+<!-- CLIENTS -->
+<section id="clients" class="section">
+    <h2>Our Clients</h2>
+
+    <div class="grid">
+        <div class="card">Game Studios</div>
+        <div class="card">Startups</div>
+        <div class="card">Content Creators</div>
+        <div class="card">E-commerce Brands</div>
+        <div class="card">Educational Institutions</div>
+    </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="section dark">
+    <h2>Our Team</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Founder</h3>
+            <p>Full Stack Engineer</p>
+        </div>
+        <div class="card">
+            <h3>3D Artist</h3>
+            <p>Assets & Environment</p>
+        </div>
+        <div class="card">
+            <h3>Animator</h3>
+            <p>Motion & Visuals</p>
+        </div>
+        <div class="card">
+            <h3>UI/UX Designer</h3>
+            <p>Brand & Interface</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+
+    <form method="POST" action="/contact">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 DEZOVTEX. All Rights Reserved.</p>
+</footer>
+
+<script src="/js/script.js"></script>
 </body>
 </html>
